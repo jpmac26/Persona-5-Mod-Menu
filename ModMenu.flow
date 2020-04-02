@@ -134,6 +134,9 @@ void PlayerEditorDisplay()
             case 9: 
                 PlayerSetMaxMoney();
                 break;
+			case 10:
+				HealAll();
+				break;
         }
     }
 }
@@ -1627,6 +1630,18 @@ void PlayerSetMaxMoney()
     CALL_GLOBAL_MONEY_PANEL();
     CHANGE_GLOBAL_MONEY( 9999999, 0 );
     DEL_GLOBAL_MONEY_PANEL();
+}
+
+void HealAll()
+{
+	for ( int i = 1; i < 10; i++ )
+	{
+		int maxHp = GET_MAXHP( i );
+		SET_HP( i, maxHp );
+		
+		int maxSp = GET_MAXSP( i );
+		SET_SP( i, maxSp );
+	}
 }
 
 // Calendar Editor

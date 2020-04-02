@@ -66,6 +66,7 @@ Player Options[w][e]
 [s]Set Scale[f 4 26 7 114][e]
 [s]Attach Item Model[f 4 26 8 115][e]
 [s]Max Money[f 4 26 9 116][e]
+[s]Heal All[f 4 26 10 301][e]
 
 [dlg GENERIC_HELP_107]
 [s]Add or remove your Personas, or[n]give you or your party[n]members new Skills.[e]
@@ -974,3 +975,6 @@ Enter the end of the[n]range to narrow down.[n](Max 4 digits, press Circle to en
 
 [dlg GENERIC_HELP_310]
 Unlocks all Personas in the[n]Compendium. [clr 9]This will delete all[n]Personas in your current stock![clr 0][w][e]
+
+[dlg GENERIC_HELP_301]
+[s]Fully restores HP and SP[n]of all party members.[w][e]
